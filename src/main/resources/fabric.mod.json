@@ -1,20 +1,17 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
-  "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "id": "spawner-panic",
+  "version": "0.1.0",
+  "name": "Spawner Panic",
+  "description": "Automatically panic-breaks stacked spawners and stashes them in echest.",
   "authors": [
-    "seasnail"
+    "Kellan"
   ],
-  "contact": {
-    "sources": "https://github.com/MeteorDevelopment/meteor-addon-template"
-  },
   "icon": "assets/template/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.AddonTemplate"
+      "com.example.addon.SpawnerPanicAddon"
     ]
   },
   "mixins": [
@@ -30,7 +27,7 @@
   },
   "depends": {
     "java": ">=21",
-    "minecraft": ["${mc_version}", "1.21.9"],
+    "minecraft": "1.21.x",
     "meteor-client": "*"
   }
 }
